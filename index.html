@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="Body">
+    <header>
+      <!-- Estructura HTML -->
+      <nav class="dropdown">
+        <div class="logo">
+          <a href="#"
+            ><img src="img/logopng2-01.png" class="img-normal" alt=""
+          /></a>
+          <a href="#"
+            ><img src="img/logopng-01.png" class="img-hover" alt=""
+          /></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index-portafolio.html" target="_blank">Portfolio</a></li>
+          <li class="menu-item">
+            <a href="#">Book character</a>
+            <ul class="submenu">
+              <li><a href="index-heaven.html" target="_blank">Heaven</a></li>
+              <li><a href="index-hell.html" target="_blank">Hell</a></li>
+              <li><a href="index-clones.html" target="_blank">Clones</a></li>
+              <li><a href="index-nano.html" target="_blank">Nanosuit</a></li>
+              <li><a href="index-lilith-son.html" target="_blank">Lilith's son</a></li>
+              <li><a href="index-friends-jinn.html" target="_blank">Jinn's friends</a></li>
+              <li><a href="index-los5.html" target="_blank">Los 5</a></li>
+              <li><a href="index-family-paul-jinn.html" target="_blank">Family paul and jinn</a></li>
+              <li><a href="index-gilver.html" target="_blank">Gilver</a></li>
+            </ul>
+          </li>
+          <li><a href="index-jigwes.html" target="_blank">Jigwes</a></li>
+          <li><a href="index-about-me.html" target="_blank">About me</a></li>
+        </ul>
+
+      </nav>
+      <button class="btn" onclick="containerModal()">
+        <!-- <img src="img/menu.png" alt="" /> -->
+        <svg
+          fill="#FFFFFF"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 80 80"
+          width="80px"
+          height="80px"
+        >
+          <path
+            d="M 14 14 C 10.698375 14 8 16.698375 8 20 C 8 23.301625 10.698375 26 14 26 L 66 26 C 69.301625 26 72 23.301625 72 20 C 72 16.698375 69.301625 14 66 14 L 14 14 z M 14 16 L 66 16 C 67.537819 16 68.849368 16.862487 69.519531 18.125 A 1 1 0 0 0 70 20 C 70 22.220375 68.220375 24 66 24 L 14 24 C 11.779625 24 10 22.220375 10 20 A 1 1 0 0 0 10.482422 18.125 C 11.152724 16.862938 12.462514 16 14 16 z M 14 18 A 1 1 0 0 0 14 20 A 1 1 0 0 0 14 18 z M 18 18 A 1 1 0 0 0 18 20 A 1 1 0 0 0 18 18 z M 22 18 A 1 1 0 0 0 22 20 A 1 1 0 0 0 22 18 z M 26 18 A 1 1 0 0 0 26 20 A 1 1 0 0 0 26 18 z M 30 18 A 1 1 0 0 0 30 20 A 1 1 0 0 0 30 18 z M 34 18 A 1 1 0 0 0 34 20 A 1 1 0 0 0 34 18 z M 38 18 A 1 1 0 0 0 38 20 A 1 1 0 0 0 38 18 z M 42 18 A 1 1 0 0 0 42 20 A 1 1 0 0 0 42 18 z M 46 18 A 1 1 0 0 0 46 20 A 1 1 0 0 0 46 18 z M 50 18 A 1 1 0 0 0 50 20 A 1 1 0 0 0 50 18 z M 54 18 A 1 1 0 0 0 54 20 A 1 1 0 0 0 54 18 z M 58 18 A 1 1 0 0 0 58 20 A 1 1 0 0 0 58 18 z M 62 18 A 1 1 0 0 0 62 20 A 1 1 0 0 0 62 18 z M 66 18 A 1 1 0 0 0 66 20 A 1 1 0 0 0 66 18 z M 14 34 C 10.698375 34 8 36.698375 8 40 C 8 43.301625 10.698375 46 14 46 L 66 46 C 69.301625 46 72 43.301625 72 40 C 72 36.698375 69.301625 34 66 34 L 14 34 z M 14 36 L 66 36 C 67.537819 36 68.849368 36.862487 69.519531 38.125 A 1 1 0 0 0 70 40 C 70 42.220375 68.220375 44 66 44 L 14 44 C 11.779625 44 10 42.220375 10 40 A 1 1 0 0 0 10.482422 38.125 C 11.152724 36.862938 12.462514 36 14 36 z M 14 38 A 1 1 0 0 0 14 40 A 1 1 0 0 0 14 38 z M 18 38 A 1 1 0 0 0 18 40 A 1 1 0 0 0 18 38 z M 22 38 A 1 1 0 0 0 22 40 A 1 1 0 0 0 22 38 z M 26 38 A 1 1 0 0 0 26 40 A 1 1 0 0 0 26 38 z M 30 38 A 1 1 0 0 0 30 40 A 1 1 0 0 0 30 38 z M 34 38 A 1 1 0 0 0 34 40 A 1 1 0 0 0 34 38 z M 38 38 A 1 1 0 0 0 38 40 A 1 1 0 0 0 38 38 z M 42 38 A 1 1 0 0 0 42 40 A 1 1 0 0 0 42 38 z M 46 38 A 1 1 0 0 0 46 40 A 1 1 0 0 0 46 38 z M 50 38 A 1 1 0 0 0 50 40 A 1 1 0 0 0 50 38 z M 54 38 A 1 1 0 0 0 54 40 A 1 1 0 0 0 54 38 z M 58 38 A 1 1 0 0 0 58 40 A 1 1 0 0 0 58 38 z M 62 38 A 1 1 0 0 0 62 40 A 1 1 0 0 0 62 38 z M 66 38 A 1 1 0 0 0 66 40 A 1 1 0 0 0 66 38 z M 14 54 C 10.698375 54 8 56.698375 8 60 C 8 63.301625 10.698375 66 14 66 L 66 66 C 69.301625 66 72 63.301625 72 60 C 72 56.698375 69.301625 54 66 54 L 14 54 z M 14 56 L 66 56 C 67.537819 56 68.849368 56.862487 69.519531 58.125 A 1 1 0 0 0 70 60 C 70 62.220375 68.220375 64 66 64 L 14 64 C 11.779625 64 10 62.220375 10 60 A 1 1 0 0 0 10.482422 58.125 C 11.152724 56.862938 12.462514 56 14 56 z M 14 58 A 1 1 0 0 0 14 60 A 1 1 0 0 0 14 58 z M 18 58 A 1 1 0 0 0 18 60 A 1 1 0 0 0 18 58 z M 22 58 A 1 1 0 0 0 22 60 A 1 1 0 0 0 22 58 z M 26 58 A 1 1 0 0 0 26 60 A 1 1 0 0 0 26 58 z M 30 58 A 1 1 0 0 0 30 60 A 1 1 0 0 0 30 58 z M 34 58 A 1 1 0 0 0 34 60 A 1 1 0 0 0 34 58 z M 38 58 A 1 1 0 0 0 38 60 A 1 1 0 0 0 38 58 z M 42 58 A 1 1 0 0 0 42 60 A 1 1 0 0 0 42 58 z M 46 58 A 1 1 0 0 0 46 60 A 1 1 0 0 0 46 58 z M 50 58 A 1 1 0 0 0 50 60 A 1 1 0 0 0 50 58 z M 54 58 A 1 1 0 0 0 54 60 A 1 1 0 0 0 54 58 z M 58 58 A 1 1 0 0 0 58 60 A 1 1 0 0 0 58 58 z M 62 58 A 1 1 0 0 0 62 60 A 1 1 0 0 0 62 58 z M 66 58 A 1 1 0 0 0 66 60 A 1 1 0 0 0 66 58 z"
+          />
+        </svg>
+      </button>
+      <div class="container-modal">
+        <!--pasarlo al header esta parte-->
+        <div class="modal-window">
+          <span class="close-modal" onclick="closeModal1()">X</span>
+          <!-- <h1 class="primer">Primer modal</h1>
+            <p class="texto-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat eligendi nesciunt quia illum deserunt sed incidunt minima ab, adipisci ullam quis, sequi voluptas rem. Sunt quasi tempore veniam! Soluta?</p> -->
+          <!-- <li class="desplegable" id="modal" >
+    
+                <ul class="ul" >
+                    <li ><a href="" class="a">About</a></li>
+                    <li ><a href="" class="a">Testimonios</a></li>
+                    <li ><a href="" class="a">Contacto</a></li>
+        
+                </ul>
+            </li> -->
+
+          <ul class="menu">
+            <li class="li"><a class="a" href="index-portafolio.html" target="_blank">Portfolio</a></li>
+            <li class="menu-item li">
+              <a class="a" href="#">Book character</a>
+              <ul class="submenu">
+                <li><a href="index-heaven.html" target="_blank">Heaven</a></li>
+                <li><a href="index-hell.html" target="_blank">Hell</a></li>
+                <li><a href="index-clones.html" target="_blank">Clones</a></li>
+                <li><a href="index-nano.html" target="_blank">Nanosuit</a></li>
+                <li><a href="index-lilith-son.html" target="_blank">Lilith's son</a></li>
+                <li><a href="index-friends-jinn.html" target="_blank">Jinn's friends</a></li>
+                <li><a href="index-los5.html" target="_blank">Los 5</a></li>
+              <li><a href="index-family-paul-jinn.html" target="_blank">Family paul and jinn</a></li>
+              <li><a href="index-gilver.html" target="_blank">Gilver</a></li>
+
+
+              </ul>
+            </li>
+            <li class="li"><a class="a" href="index-jigwes.html" target="_blank">Jigwes</a></li>
+            <li class="li"><a class="a" href="index-about-me.html" target="_blank">About me</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/cielolos7.jpg" alt="First slide">
+            <div class="frase">
+            <h5>The seven ones</h5>
+            <p>los 7 luchando a favor del altisimo</p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img2/16939.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img2/Fondos-de-pantalla-Angeles-wallpapers-gratistodo.com-1.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div> -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+          <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="7"
+          aria-label="Slide 8"
+        ></button>
+        <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="8"
+        aria-label="Slide 9"
+      ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/cielolos7.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>The seven ones</h5>
+              <p>los 7 luchando a favor del altisimo</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/lucerofotoinfiernoamodef.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>The infernales</h5>
+              <p>Los escogidos para obtener el poder</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/ciudadconlosclones.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>The ones</h5>
+              <p>To be as God</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/ciudaddelosnanosuit.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>The nanosuit</h5>
+              <p>Un gran apoyo para los clones</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/lilithysushijos.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>Lilith'son</h5>
+              <p>Hijos de una gran madre</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/casa-abandonada-en barrio-solo-meri-jinn-y los padres.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>Jinn's friends</h5>
+              <p>Un gran apoyo en su dolor</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/los5luceroylilith.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>The 5</h5>
+              <p>Gran apoyo para su amo lucero</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/family-paul-and-jinn.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>Big family</h5>
+              <p>join us</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img-gilver/lita-paul-gilver-mas-grande.jpg"
+              class="d-block w-100"
+              style="height: 100vh"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block d-sm-block">
+              <h5>Gilver</h5>
+              <p>One</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span><!--poner un icono ahi-->
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <aside class="aside-1"></aside>
+    <aside class="aside-2"></aside>
+    <footer>
+      <h2 class="copy-right">Copy right: ORIGEN DEL PECADO</h2>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/codigo.js"></script>
+  </body>
+</html>
